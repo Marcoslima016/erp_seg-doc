@@ -24,8 +24,26 @@ table th:nth-of-type(4) {
 } */
 </style>
 
-
 Lista de tabelas utilizadas no sistema, descrevendo as colunas existentes em cada tabela e as suas relações. 
+
+
+
+
+<!--===================== TABELA USUARIOS  =====================-->
+---
+##Table Usuarios
+###Colunas
+| Name | Data type | Descrição |  
+|-----------|:-----------:|-----------:|  
+| USUARIO_ID | int | Primary key da tabela |
+| NOME | string | Nome do usuário |
+| EMAIL | string | Email do usuario |
+
+###Relações
+
+| FK Table | PK Table | Column |  Desc  | 
+|-----------|:-----------:|:-----------:|-----------:|  
+|  |  |  |   | 
 
 
 
@@ -45,6 +63,9 @@ Lista de tabelas utilizadas no sistema, descrevendo as colunas existentes em cad
 |-----------|:-----------:|:-----------:|-----------:|  
 |  |  |  |   | 
 
+
+
+<br/><br/>
 <!--================= TABELA RASTREADPRES  =================-->
 ---
 ##Table Rastreadores
@@ -64,6 +85,8 @@ Lista de tabelas utilizadas no sistema, descrevendo as colunas existentes em cad
 | Chips | Rastreadores | RASTREADOR_ID|   |   -->
 
 
+
+<br/><br/>
 <!--==================== TABELA ANTENAS ====================-->
 ---
 ##Table Antenas
@@ -82,6 +105,8 @@ Lista de tabelas utilizadas no sistema, descrevendo as colunas existentes em cad
 |-----------|:-----------:|:-----------:|-----------:|  
 |  |  |  |  |  
 
+
+<br/><br/>
 <!--==================== TABELA ANTENAS ====================-->
 ---
 ##Table Chicotes
