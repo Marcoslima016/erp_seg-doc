@@ -1,5 +1,21 @@
 site_name: Docs Seg ERP
 
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  # - pymdownx.tabbed
+  # - attr_list
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css 
+
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
@@ -19,36 +35,35 @@ nav:
 
 
 theme:
-  name: null
-  custom_dir: mkdocs-material/material
+  name: material
+  # custom_dir: mkdocs-material/material
+  # custom_dir: mkdocs-material-7.3.6/material
+  custom_dir: mkdocs-material-8.2.9/material
+
   palette:
-    primary: red
-  # palette:
-  #   - media: "(prefers-color-scheme: dark)"
-  #     scheme: slate
-  #     toggle:
-  #       icon: material/toggle-switch
-  #       name: Switch to light mode
+    primary: blue
 
+  features:
+    - content.code.annotate
+  # features:
+  #   - navigation.expand
 
-  # palette:
-  #   primary: indigo
+  # 404 page
+  static_templates:
+    - 404.html
 
-    # - media: "(prefers-color-scheme: dark)"
-    #   scheme: slate
-    #   toggle:
-    #     icon: material/toggle-switch
-    #     name: Switch to light mode
-  # palette:
-  # - scheme: default
-  #   toggle:
-  #     icon: material/toggle-switch-off-outline
-  #     name: Switch to dark mode
-  # - scheme: slate
-  #   toggle:
-  #     icon: material/toggle-switch
-  #     name: Switch to light mode 
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
 
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
 
   # features:
